@@ -100,19 +100,19 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp F2  &kp N7  &kp N8           &kp N9                                        &trans  &trans    &kp UP_ARROW  &kp F10    &trans
-&trans      &trans  &kp N4  &kp N5           &kp N6        &trans            &bt BT_SEL 0  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans      &kp N0  &kp N1  &kp KP_NUMBER_2  &kp NUMBER_3  &bt BT_SEL 2      &bt BT_SEL 1  &trans  &trans    &trans        &trans     &trans
-&trans      &trans  &trans  &trans           &trans        &trans            &trans        &trans                                     &trans
+&kp ESCAPE      &kp F2  &kp N7  &kp N8           &kp N9                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP_ARROW  &kp F10    &trans
+&trans          &trans  &kp N4  &kp N5           &kp N6        &trans            &bt BT_SEL 0  &trans            &kp LEFT           &kp DOWN      &kp RIGHT  &trans
+&kp LEFT_SHIFT  &kp N0  &kp N1  &kp KP_NUMBER_2  &kp NUMBER_3  &bt BT_SEL 2      &bt BT_SEL 1  &trans            &trans             &trans        &trans     &trans
+&trans          &trans  &trans  &trans           &trans        &trans            &trans        &trans                                                        &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &trans       &kp KP_N7  &kp KP_N8  &kp KP_NUMBER_9                                              &kp CARET        &kp AMPERSAND     &kp TILDE          &kp LS(RIGHT_BRACE)  &kp PIPE
-&trans  &kp KP_PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6        &kp LC(LA(KP_NUMBER_0))      &kp E          &kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH           &kp DOLLAR           &trans
-&trans  &kp KP_N0    &kp KP_N1  &kp KP_N2  &kp KP_N3        &to 0                        &kp LS(MINUS)  &kp PLUS         &kp LS(NUMBER_9)  &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &kp SLASH
-&trans  &trans       &trans     &trans     &trans           &trans                       &trans         &trans                                                                     &kp PIPE
+&trans  &trans       &kp KP_N7  &kp KP_N8  &kp KP_NUMBER_9                                              &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp TILDE          &kp LS(RIGHT_BRACE)  &kp PIPE
+&trans  &kp KP_PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6        &kp LC(LA(KP_NUMBER_0))      &trans         &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp HASH           &kp DOLLAR           &trans
+&trans  &kp KP_N0    &kp KP_N1  &kp KP_N2  &kp KP_N3        &to 0                        &kp LS(MINUS)  &trans             &trans                &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &kp SLASH
+&trans  &trans       &trans     &trans     &trans           &trans                       &trans         &trans                                                                           &kp PIPE
             >;
         };
 
