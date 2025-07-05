@@ -71,6 +71,11 @@
             bindings = <&kp LS(Z)>;
             key-positions = <22 23>;
         };
+
+        SHIFT_Enter {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
