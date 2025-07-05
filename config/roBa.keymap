@@ -29,6 +29,9 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
+// #includeのあとのあたりにスクロール量変更の定義を追記：マウススクロールの設定をロータリーエンコーダーへ設定。
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -73,16 +76,28 @@
         };
     };
 
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+//    behaviors {
+//        lt_to_layer_0: lt_to_layer_0 {
+//            compatible = "zmk,behavior-hold-tap";
+//            label = "LAYER_TAP_TO_0";
+//            bindings = <&mo>, <&to_layer_0>;
+//
+//            #binding-cells = <2>;
+//            tapping-term-ms = <200>;
+//        };
+//    };
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
+// マウススクロールの設定をロータリーエンコーダーへ設定。
+// スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
+    behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
         };
-    };
+   };
 
     keymap {
         compatible = "zmk,keymap";
@@ -95,7 +110,9 @@
 &kp ESCAPE          &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mt LEFT_CONTROL SPACE  &lt 2 LANGUAGE_2      &kp INT_KANA  &lt 1 BACKSPACE                             &to 5
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+// マウススクロールの設定をロータリーエンコーダーへ設定。
+//            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
