@@ -121,7 +121,7 @@
             tap-hold-key-code = <&kp Z>; // タップ時にZ
             // ホールド時のキーコード
 
-            hold-key-code = <&kp LSHIFT>; // ホールド時にSHIFTキー
+            hold-key-code = <&kp LEFT_SHIFT>; // ホールド時にSHIFTキー
         };
     };
 
