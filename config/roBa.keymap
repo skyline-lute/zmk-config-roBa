@@ -112,21 +112,13 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-
-        //Shiftを継続する。
-
-        hm: hom_tap {
-            compatible = "zmk,behavior_hold_tap";
-            #binding-cells = <>;
-            tapping-term-ms = <200>; // タップとホールドの判定時間（ミリ秒）
             hold-trigger-key-codes = <
                 &mo 3 // レイヤー移動キー（例：&mo L2）
             >;
 
             // タップ時のキーコード
 
-            tap-hold-key-code = <&kp Z>; // タップ時にTABキー
+            tap-hold-key-code = <&kp Z>; // タップ時にZ
             // ホールド時のキーコード
 
             hold-key-code = <&kp LSHIFT>; // ホールド時にSHIFTキー
