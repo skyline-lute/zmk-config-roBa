@@ -125,8 +125,8 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE          &kp F2  &kp AMPERSAND  &kp F4      &kp AT                                      &kp RBKT  &kp NON_US_HASH  &kp UP_ARROW  &kp F10    &kp LS(LG(S))
-&trans              &trans  &trans         &trans      &trans      &trans            &bt BT_SEL 0  &trans    &kp LEFT         &kp DOWN      &kp RIGHT  &trans
+&kp ESCAPE          &trans  &kp AMPERSAND  &trans      &kp AT                                      &kp RBKT  &kp NON_US_HASH  &kp UP_ARROW  &kp F10    &kp LS(LG(S))
+&trans              &kp F2  &trans         &kp F4      &trans      &trans            &bt BT_SEL 0  &trans    &kp LEFT         &kp DOWN      &kp RIGHT  &kp F10
 &kp LS(LEFT_SHIFT)  &trans  &trans         &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2      &bt BT_SEL 1  &trans    &trans           &trans        &trans     &kp JP_UNDERSCORE
 &trans              &trans  &trans         &trans      &trans      &trans            &trans        &trans                                              &trans
             >;
@@ -134,10 +134,10 @@
 
         NUM {
             bindings = <
-&trans  &trans       &kp KP_N7  &kp KP_N8  &kp KP_NUMBER_9                                              &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp EXCLAMATION  &trans  &kp PERCENT
-&trans  &kp KP_PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6        &kp LC(LA(KP_NUMBER_0))      &trans         &kp DOUBLE_QUOTES  &trans                &trans           &trans  &trans
-&trans  &kp KP_N0    &kp KP_N1  &kp KP_N2  &kp KP_N3        &to 0                        &kp LS(MINUS)  &trans             &kp HASH              &kp DOLLAR       &trans  &trans
-&trans  &trans       &trans     &trans     &trans           &trans                       &trans         &trans                                                            &trans
+&trans  &trans  &trans  &trans  &trans                                                 &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp EXCLAMATION  &trans  &kp PERCENT
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp LC(LA(KP_NUMBER_0))      &trans         &kp N6             &kp N7                &kp N8           &kp N9  &kp N0
+&trans  &trans  &trans  &trans  &kp COLON  &to 0                        &kp LS(MINUS)  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR       &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans                       &trans         &trans                                                            &trans
             >;
         };
 
