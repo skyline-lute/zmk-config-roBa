@@ -125,10 +125,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &kp F2  &kp AMPERSAND  &kp F4      &kp AT                                      &kp RBKT  &kp NON_US_HASH  &kp UP_ARROW  &kp F10    &kp LS(LG(S))
-&trans          &trans  &trans         &trans      &trans      &trans            &bt BT_SEL 0  &trans    &kp LEFT         &kp DOWN      &kp RIGHT  &trans
-&kp LEFT_SHIFT  &trans  &trans         &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2      &bt BT_SEL 1  &trans    &trans           &trans        &trans     &kp JP_UNDERSCORE
-&trans          &trans  &trans         &trans      &trans      &trans            &trans        &trans                                              &trans
+&kp ESCAPE          &kp F2  &kp AMPERSAND  &kp F4      &kp AT                                      &kp RBKT  &kp NON_US_HASH  &kp UP_ARROW  &kp F10    &kp LS(LG(S))
+&trans              &trans  &trans         &trans      &trans      &trans            &bt BT_SEL 0  &trans    &kp LEFT         &kp DOWN      &kp RIGHT  &trans
+&kt LS(LEFT_SHIFT)  &trans  &trans         &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2      &bt BT_SEL 1  &trans    &trans           &trans        &trans     &kp JP_UNDERSCORE
+&trans              &trans  &trans         &trans      &trans      &trans            &trans        &trans                                              &trans
             >;
         };
 
@@ -154,10 +154,10 @@
 
         MOUSE {
             bindings = <
-&kp LC(Q)         &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                      &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
-&kp LEFT_CONTROL  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &trans     &trans     &trans     &kp LC(L)  &trans
-&kp LEFT_SHIFT    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &trans     &mkp MB1   &mkp MB2   &trans     &trans
-&trans            &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
+&kp LC(Q)             &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                      &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
+&kp LC(LEFT_CONTROL)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &trans     &trans     &trans     &kp LC(L)  &trans
+&kp LEFT_SHIFT        &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &trans     &mkp MB1   &mkp MB2   &trans     &trans
+&trans                &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
             >;
         };
 
