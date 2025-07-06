@@ -105,7 +105,17 @@
             tap-ms = <20>;
         };
 
+        hom_tap: hom_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOM_TAP";
+            bindings = <&none>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
         //Shiftを継続する。
+
         hm: hom_tap {
             compatible = "zmk,behavior_hold_tap";
             #binding-cells = <>;
