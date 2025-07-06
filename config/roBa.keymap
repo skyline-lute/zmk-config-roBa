@@ -154,7 +154,7 @@
 
         MOUSE {
             bindings = <
-&trans            &trans     &trans     &kp LC(R)  &trans                         &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
+&kp LC(Q)         &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                      &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
 &kp LEFT_CONTROL  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &trans     &trans     &trans     &kp LC(L)  &trans
 &kp LEFT_SHIFT    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &trans     &mkp MB1   &mkp MB2   &trans     &trans
 &trans            &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
