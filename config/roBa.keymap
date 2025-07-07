@@ -80,6 +80,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        Cntrl2: Cntrl2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_CONTROL>;
+            label = "CNTRL2";
+        };
     };
 
     //    behaviors {
@@ -157,7 +164,7 @@
 &kp LC(Q)             &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                      &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
 &kp LC(LEFT_CONTROL)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &trans     &trans     &trans     &kp LC(L)  &trans
 &kp LEFT_CONTROL      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &trans     &mkp MB1   &mkp MB2   &trans     &trans
-&trans                &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
+&trans                &trans     &trans     &trans     &Cntrl2    &trans      &trans  &trans                                      &trans
             >;
         };
 
