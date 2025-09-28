@@ -147,15 +147,15 @@
             >;
         };
 
-        MOUSE_CTRL {
+        MOUSE {
             bindings = <
-&kp LC(Q)             &kp LC(W)         &kp LC(E)  &kp LC(R)  &kp LC(A)                      &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
-&kp LC(LEFT_CONTROL)  &kp LC(S)         &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &trans     &trans     &trans     &kp LC(L)  &trans
-&kp LEFT_CONTROL      &kp LC(X)         &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &trans     &trans     &mkp MB1   &mkp MB2   &trans
-&trans                &kp LC(LEFT_WIN)  &trans     &trans     &Cntrl2    &trans      &trans  &trans                                      &trans
+&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &Cntrl2  &trans      &trans  &trans                              &trans
             >;
 
-            label = "MOUSE_CTRL";
+            label = "MOUSE";
         };
 
         SCROLL {
@@ -164,6 +164,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &to 0
+            >;
+        };
+
+        CTRL {
+            label = "CTRL";
+            bindings = <
+&kp LC(Q)             &kp LC(W)         &kp LC(E)  &kp LC(R)  &kp LC(A)                      &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
+&kp LC(LEFT_CONTROL)  &kp LC(S)         &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &trans     &trans     &trans     &kp LC(L)  &trans
+&kp LEFT_CONTROL      &kp LC(X)         &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &trans     &trans     &trans     &trans     &trans
+&trans                &kp LC(LEFT_WIN)  &trans     &trans     &Cntrl2    &trans      &trans  &trans                                      &trans
             >;
         };
     };
