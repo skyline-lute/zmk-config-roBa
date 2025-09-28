@@ -131,7 +131,7 @@
 
         NUM {
             bindings = <
-&kp EXCLAMATION  &trans  &trans  &trans  &trans                                                 &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans      &trans  &kp PERCENT
+&kp EXCLAMATION  &trans  &trans  &trans  &trans                                                 &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans      &kp N0  &kp PERCENT
 &kp N1           &kp N2  &kp N3  &kp N4  &kp N5     &kp LC(LA(KP_NUMBER_0))      &trans         &kp N6             &kp N7                &kp N8      &kp N9  &kp N0
 &trans           &trans  &trans  &trans  &kp COLON  &to 0                        &kp LS(MINUS)  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR  &trans  &trans
 &trans           &trans  &trans  &trans  &trans     &trans                       &trans         &trans                                                       &trans
