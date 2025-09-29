@@ -171,9 +171,9 @@
             label = "CTRL";
             bindings = <
 &kp LC(Q)             &kp LC(W)         &kp LC(E)  &kp LC(R)  &kp LC(A)                      &kp LC(Y)  &kp LC(U)  &kp LC(I)  &trans     &trans
-&kp LC(LEFT_CONTROL)  &kp LC(S)         &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &trans     &trans     &trans     &kp LC(L)  &trans
-&kp LEFT_CONTROL      &kp LC(X)         &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &trans     &trans     &trans     &trans     &trans
-&trans                &kp LC(LEFT_WIN)  &trans     &trans     &Cntrl2    &trans      &trans  &trans                                      &trans
+&kp LC(LEFT_CONTROL)  &kp LC(S)         &kp LC(D)  &kp LC(F)  &kp LC(Z)  &trans      &trans  &kp LC(H)  &trans     &trans     &kp LC(L)  &trans
+&kp LEFT_CONTROL      &kp LC(X)         &kp LC(C)  &kp LC(V)  &kp LC(B)  &to 0       &trans  &kp LC(N)  &trans     &trans     &trans     &trans
+&trans                &kp LC(LEFT_WIN)  &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
             >;
         };
     };
